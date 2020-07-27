@@ -1,14 +1,34 @@
-import csv
-print("Your List")
-print()
+'''
+Libre is a virtual Reading List assistant
+created by ya boi rayendito
+jangan di hack ya
+bikinnya susah – gadeng, thanks to tubes IF1210 :>
+'''
+
+import csv, newBook, saveFile
+
+#to keep it running
+endProgram = False
+
+#converting from txt to list
 with open('toBeRead.txt') as bookData:
     csv_reader = csv.reader(bookData, delimiter =',')
-    baris_count = 0
-    for baris in csv_reader:
-        if baris_count == 0:
-            print("List by Title, Author")
-            baris_count += 1
-        else:
-            print(baris[0]+', by '+baris[1])
+    yourList = [row for row in csv_reader]
 
-        
+print("Here's your list :\n")
+for book in yourList:
+    print(book[0]+', by '+book[1])
+print()
+
+while (not endProgram):
+    command = str(input("your wish iz my command :"))
+    if command == "new":
+        yourList = newBook.newBuku(yourList)
+        saveFile.writeFile('toBeRead.txt', yourList)
+    if command == "show books":
+        for book in yourList:
+            print(book[0]+', by '+book[1])
+        print()
+    if command == "exit":
+        print("Happy Reading")
+        endProgram = True
