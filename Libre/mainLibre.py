@@ -14,21 +14,22 @@ endProgram = False
 with open('toBeRead.txt') as bookData:
     csv_reader = csv.reader(bookData, delimiter =',')
     yourList = [row for row in csv_reader]
-
+print("\nHello, welcome to Libre, your virtual reading list assistant")
 print("Here's your list :\n")
 for book in yourList:
     print(book[0]+', by '+book[1])
 print()
 
 while (not endProgram):
-    command = str(input("your wish iz my command :"))
+    command = str(input("your wish iz my command :\n"))
     if command == "new":
         yourList = newBook.newBuku(yourList)
         saveFile.writeFile('toBeRead.txt', yourList)
-    if command == "show books":
+    if command == "show":
+        print()
         for book in yourList:
             print(book[0]+', by '+book[1])
         print()
     if command == "exit":
-        print("Happy Reading")
+        print("\nHappy Reading :)")
         endProgram = True
