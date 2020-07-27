@@ -1,0 +1,16 @@
+toBeRead:
+    1984
+    The Great Gatsby
+    Animal Farm
+    The Book Thief
+    How to Lie with Statistics
+    All The King's Men
+    Crazy Rich Asians
+    One Hundred Years of Solitude
+    Will Grayson, Will Grayson
+    How To: Absurd Scientific Advice for Common Real World Problems
+    East of Eden
+    An Absolutely Remarkable Thing
+    The Testaments
+    The Color Purple
+    
