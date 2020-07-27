@@ -1,16 +1,15 @@
-toBeRead:
-    1984
-    The Great Gatsby
-    Animal Farm
-    The Book Thief
-    How to Lie with Statistics
-    All The King's Men
-    Crazy Rich Asians
-    One Hundred Years of Solitude
-    Will Grayson, Will Grayson
-    How To: Absurd Scientific Advice for Common Real World Problems
-    East of Eden
-    An Absolutely Remarkable Thing
-    The Testaments
-    The Color Purple
-    
+Title,Author
+1984,George Orwell
+The Great Gatsby,F. Scott Fitzgerald
+Animal Farm,George Orwell
+The Book Thief,Markus Zusak
+How to Lie with Statistics,Darrell Huff
+All The King's Men,Robert Penn Warren
+Crazy Rich Asians,Kevin Kwan
+One Hundred Years of Solitude,Gabriel Garcia Marquez
+"Will Grayson, Will Grayson","John Green, David Levithan"
+How To: Absurd Scientific Advice for Common Real World Problems,Randall Munroe
+East of Eden,John Steinbeck
+An Absolutely Remarkable Thing,Hank Green
+The Testaments,Margaret Atwood
+The Color Purple,Alice Walker
