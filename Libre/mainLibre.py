@@ -5,7 +5,7 @@ jangan di hack ya
 bikinnya susah – gadeng, thanks to tubes IF1210 :>
 '''
 
-import csv, newBook, saveFile
+import csv, newBook, saveFile, deleteBook
 
 #to keep it running
 endProgram = False
@@ -21,15 +21,18 @@ for book in yourList:
 print()
 
 while (not endProgram):
-    command = str(input("your wish iz my command :\n"))
-    if command == "new":
+    command = str(input("your wish iz my command : "))
+    print()
+    if command == "add":
         yourList = newBook.newBuku(yourList)
-        saveFile.writeFile('toBeRead.txt', yourList)
+    if command == "delete":
+        yourList = deleteBook.delete(yourList)
     if command == "show":
         print()
         for book in yourList:
             print(book[0]+', by '+book[1])
         print()
     if command == "exit":
-        print("\nHappy Reading :)")
+        saveFile.writeFile('toBeRead.txt', yourList)
+        print("Happy Reading :)\n")
         endProgram = True
